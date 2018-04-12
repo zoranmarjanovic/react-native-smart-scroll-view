@@ -1,7 +1,7 @@
 import React, {
-  Component,
-  PropTypes,
+  Component
 } from 'react';
+import PropTypes from 'prop-types'
 
 import ReactNative, {
   View,
@@ -237,7 +237,7 @@ class SmartScrollView extends Component {
             contentInset                     = { contentInset }
             zoomScale                        = { zoomScale }
             showsVerticalScrollIndicator     = { showsVerticalScrollIndicator }
-            keyboardShouldPersistTaps        = { true }
+            keyboardShouldPersistTaps        = { 'always' }
             bounces                          = { false }
           >
             {content}
